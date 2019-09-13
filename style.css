@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Chilanka', monospace;
+}
+header {
+    background: url("https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+}
+header #overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+div.card-body {
+    height: 350px;
+    position: relative;
+}
+div.card-body img {
+    width: 100%;
+    height: 100%;
+}
+div.card-body div.text-over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: all .3s;
+}
+div.card-body:hover div.text-over {
+    visibility: visible;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.589);
+}
+.card-footer {
+    color: rgb(255, 115, 0);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background: #f8cdda;
+}
+#movie-section {
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+    height: 100%;
+}

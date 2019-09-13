@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Database</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40=" crossorigin="anonymous" />
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+    <!-- PERSONAL STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVIGATION MENU  -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">QMovies</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- HEADER WITH FORM -->
+<header>
+    <div id="overlay">
+        <div class="container">
+            <form class="col-lg-8 mx-auto">
+                <h1 class="text-center text-white py-3">Enter A Movie Into The Database</h1>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="form-group text-white">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="Ex. Spiderman">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="form-group text-white">
+                            <label for="genre">Genre</label>
+                            <input type="text" class="form-control" id="genre" placeholder="Ex. Action/Adventure">
+                        </div>     
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="form-group text-white">
+                            <label for="rating">Rating</label>
+                            <input type="text" class="form-control" id="rating" placeholder="Ex. 7.8/10">
+                        </div>         
+                    </div>
+                </div>  
+                <button type="submit" class="btn btn-primary btn-block">Enter into database</button>
+            </form>
+        </div>
+    </div>
+</header>
+<!-- MAIN WITH DIVs TO DISPLAY -->
+<main id="movie-section">
+    <div class="container">
+        <div id="moviesAppend" class="row py-3">
+        </div>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="appES6.js"></script>
+</body>
+</html>
