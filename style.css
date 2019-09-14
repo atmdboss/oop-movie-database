@@ -5,6 +5,8 @@
 }
 body {
     font-family: 'Chilanka', monospace;
+    background: linear-gradient(to right, #1d2b64, #f8cdda);
+    height: 100vh;
 }
 header {
     background: url("https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
@@ -18,6 +20,9 @@ header #overlay {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.589);
+}
+div.col-md-6 {
+    margin-bottom: 100px;
 }
 div.card-body {
     height: 350px;
@@ -45,8 +50,4 @@ div.card-body:hover div.text-over {
     font-weight: bolder;
     font-size: 1.1rem;
     background: #f8cdda;
-}
-#movie-section {
-    background: linear-gradient(to right, #1d2b64, #f8cdda);
-    height: 100%;
 }

@@ -8,25 +8,16 @@ function Movie(title, genre, rating){
 }
 function UXActions(){}//ALL ACTIONS PERTAINING TO THE USER EXPERIENCE(HENCE UX PREFIX)
 UXActions.prototype.constructDiv = function(movie){
-    const columnDiv = createDivElement();
-        const cardBodyDiv = createDivElement();
-        const textOverDiv = createDivElement();
-        const footerDiv = createDivElement();
-        const img = document.createElement("img");
+    let divContainer = 
+        `<div class="col-md-6 col-lg-4 col-xl-3 img-display">
+            <div class="card-body p-0 text-center">
+                <div class="text-over text-white">${movie.rating} <br> ${movie.genre}</div>
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1536895878856-6738f6d20051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+                <div class="card-footer d-flex justify-content-between">${movie.title} <button class="btn btn-link"><i class="fas fa-trash"></i></button></div>
+            </div>
+        </div>`;
         const row = document.getElementById("moviesAppend");
-        columnDiv.className = "col-md-6 col-lg-4 col-xl-3 img-display mb-3";
-        cardBodyDiv.className = "card-body p-0 text-center";
-        img.className = "img-fluid";
-        textOverDiv.className = "text-over text-white";
-        textOverDiv.innerHTML = `${movie.rating} <br> ${movie.genre}`;        
-        img.setAttribute("src", "https://images.unsplash.com/photo-1536895878856-6738f6d20051?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
-        footerDiv.className = "card-footer d-flex justify-content-between";
-        footerDiv.innerHTML = `${movie.title} <button class="btn btn-link"><i class="fas fa-trash"></i></button>`;
-        row.appendChild(columnDiv);
-        columnDiv.appendChild(cardBodyDiv);
-        columnDiv.appendChild(footerDiv);
-        cardBodyDiv.appendChild(textOverDiv);
-        cardBodyDiv.appendChild(img);
+        row.innerHTML += divContainer;
 }
 UXActions.prototype.removeDiv = function(target){
     target.remove();
